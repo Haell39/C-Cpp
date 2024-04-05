@@ -18,7 +18,7 @@ int ehPrimo(int num) {
 int main() {
     int limite;
 
-    printf("Digite o limite superior para encontrar números primos: ");
+    printf("Até que numero verificar: ");
     scanf("%d", &limite);
 
     printf("Números primos até %d:\n", limite);
