@@ -2,12 +2,13 @@
 
 int main() {
     int menuOption;
-    char name[20];
+    char name[40];
 
     printf("Welcome to our menu!\n");
     printf("1. New customer\n");
     printf("2. Existing customer\n");
     printf("3. Exit\n");
+    printf("Type here: ");
     scanf("%d", &menuOption);
 
     if (menuOption == 1) {
