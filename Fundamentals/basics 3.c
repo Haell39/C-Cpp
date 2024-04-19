@@ -11,9 +11,9 @@ int main()
 
     printf("Choose second number: ");
     scanf("%d", &n2);
-
+// Resto da divisão
     rest = n1 % n2;
-
+// operador de resto
     printf("Resto: %d %% %d = %d\n", n1, n2, rest);
 
 
