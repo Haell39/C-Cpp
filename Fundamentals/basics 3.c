@@ -4,7 +4,7 @@ int main()
 
     printf("basics of C:\n");
 
-    int n1, n2, sum, div, mult, sub, rest;
+    int n1, n2, rest;
 
     printf("Choose first number: ");
     scanf("%d", &n1);

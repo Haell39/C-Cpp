@@ -48,9 +48,6 @@ int main()
     Reserved words (such as int) cannot be used as names
 
     */    
-        
-    // Calculate the Area of a Rectangle:
-
     
     return 0;
     
