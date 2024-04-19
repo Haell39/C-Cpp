@@ -3,7 +3,7 @@ int main()
 {
 
     printf("Odd or Even\n");
-// Declare variable
+    // Declare variable
     int n;
     printf("Enter a number: ");
 
@@ -21,6 +21,4 @@ int main()
     }
 
     return 0;
-    
 }
-    

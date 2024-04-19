@@ -14,7 +14,6 @@ int main()
     number = mynumber; // atribui o valor de mynumber para number, number now has the value 27
     printf("num: %d\n", number);
 
-
     int numero = 17;
 
     int numeroZ;
@@ -22,19 +21,16 @@ int main()
     numeroZ = numero; // atribui o valor de numero para numeroZ, numeroZ now has the value 17
     printf("numeroZ: %d\n", numeroZ);
 
-
     // Add variable together
     int x = 10;
     int y = 20;
     int z = x + y;
     printf("z: %d\n", z);
 
-
-    //Multiple variables:
+    // Multiple variables:
     int v = 5, t = 6, l = 50;
     printf("Sum of variables: %d", v + t + l);
 
-    
     // Variable names:
 
     /*
@@ -47,9 +43,7 @@ int main()
     Names cannot contain whitespaces or special characters like !, #, %, etc.
     Reserved words (such as int) cannot be used as names
 
-    */    
-    
+    */
+
     return 0;
-    
 }
-    

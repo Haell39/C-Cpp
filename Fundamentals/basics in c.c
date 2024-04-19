@@ -14,6 +14,5 @@ int main()
 
     printf("Values:\n %d\n %0.2f\n %c\n %s\n %0.9f", n, f, letra, frase, n2);
 
-   
-    return 0;
+       return 0;
 }
