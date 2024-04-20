@@ -4,7 +4,10 @@ int main()
 {
     printf("Learning COnstants in C\n");
     const int mynum = 10; //* mynum will always be 10
+    /*
     mynum = 10; //* error
+    */
+
     return 0;
 
 
@@ -21,8 +24,12 @@ int main()
     const int minutesPerHour = 60;
 
     // *This however, will not work:
+    /* 
+
     const int minutesPerHour;
-    minutesPerHour = 60; // error
+    minutesPerHour = 60; --> //*ERROR 
+
+    */
 
     //!  it is considered good practice to declare them with UPPERCASE.
 
