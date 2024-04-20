@@ -20,5 +20,16 @@ int main()
         printf("Odd\n");
     }
 
+    //* If its only one if statement, you can use the short form without else statement:
+
+    int numb1;
+
+    printf("Enter a number: ");
+    scanf("%d", &numb1);
+    if (numb1 % 2 == 0)
+    {
+        printf("Even\n");
+    }
+
     return 0;
 }
