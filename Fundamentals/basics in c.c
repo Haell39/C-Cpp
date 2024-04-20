@@ -12,7 +12,9 @@ int main()
     char frase[] = "Hellow hollow";
     double n2 = 3.1455428658;
 
-    printf("Values:\n %d\n %0.2f\n %c\n %s\n %0.9f", n, f, letra, frase, n2);
+    printf("Values:\n %d\n %0.2f\n %c\n %s\n %.9lf", n, f, letra, frase, n2);
 
        return 0;
 }
+
+//! Float format is {}  %lf  {}
