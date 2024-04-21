@@ -2,17 +2,17 @@
 
 int main()
 {
-    // Variáveis para armazenar a data de nascimento
+    // Declarar variáveis
     int dia, mes;
 
     // Menu
     printf("Bem-vindo ao verificador de signo!\n");
-    printf("Por favor, digite o dia do seu nascimento: ");
-    scanf("%d", &dia); // Entrada de dados: leitura do dia de nascimento
-    printf("Agora, digite o mes do seu nascimento (em numeros): ");
-    scanf("%d", &mes); // Entrada de dados: leitura do mes de nascimento
+    printf("Digite o dia em que nasceu: ");
+    scanf("%d", &dia); 
+    printf("Agora em que mes nasceu (EM NUMEROS!): ");
+    scanf("%d", &mes); 
 
-    // Determinar o signo com base na data de nascimento
+    // Determinar o signo 
     if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19))
     {
         printf("Seu signo e Aries.\n");
