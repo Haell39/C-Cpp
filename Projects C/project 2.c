@@ -20,36 +20,36 @@ int main() {
         // avalia a opção escolhida pelo usuário
         switch (opcao) {
             case 1: 
-                printf("Digite o primeiro numero: ");
+                printf("primeiro numero: ");
                 scanf("%f", &num1); 
-                printf("Digite o segundo numero: ");
+                printf("segundo numero: ");
                 scanf("%f", &num2); 
                 resultado = num1 + num2; 
                 printf("Resultado da soma: %.2f\n", resultado); 
                 break;
             case 2: 
-                printf("Digite o primeiro numero: ");
+                printf("primeiro numero: ");
                 scanf("%f", &num1); 
-                printf("Digite o segundo numero: ");
+                printf("segundo numero: ");
                 scanf("%f", &num2); 
                 resultado = num1 - num2; 
                 printf("Resultado da subtracao: %.2f\n", resultado); 
                 break;
             case 3: 
-                printf("Digite o primeiro numero: ");
+                printf("primeiro numero: ");
                 scanf("%f", &num1); 
-                printf("Digite o segundo numero: ");
+                printf("segundo numero: ");
                 scanf("%f", &num2); 
                 resultado = num1 * num2; 
                 printf("Resultado da multiplicacao: %.2f\n", resultado); 
                 break;
             case 4: 
-                printf("Digite o primeiro numero: ");
+                printf("primeiro numero: ");
                 scanf("%f", &num1); 
-                printf("Digite o segundo numero: ");
+                printf("segundo numero: ");
                 scanf("%f", &num2); 
                 if (num2 == 0) {
-                    printf("Erro: divisao por zero!\n"); //divisão por zero
+                    printf("Não é possivel dividir por zero!\n"); //divisão por zero
                 } else {
                     resultado = num1 / num2; 
                     printf("Resultado da divisao: %.2f\n", resultado); 
@@ -59,7 +59,7 @@ int main() {
                 printf("Saindo...\n"); 
                 break;
             default: // 
-                printf("Opcao invalida! Tente novamente.\n"); 
+                printf("Opcao invalida! Tente denovo.\n"); 
         }
     } while (opcao != 5); //continua exibindo o menu até sair
 
