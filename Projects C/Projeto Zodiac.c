@@ -14,14 +14,14 @@ int main()
 
 		printf("\n====== MENU ======");
 		printf("\n====== ESCOLHA O CALENDARIO ZODIACO ======\n");
-		printf("[1] Zodiaco\n");
+		printf("[1] Tradicional\n");
 		printf("[2] Egipicio\n");
 		printf("[3] Chines\n");
 		printf("[4] Sair\n");
 		printf("Escolha uma opcao: ");
 		scanf("%d", &opcao);
 
-		// avalia a opço escolhida pelo usuário
+		// avalia a opcao escolhida pelo usuario
 		switch (opcao)
 		{
 		case 1:
@@ -144,13 +144,13 @@ int main()
 			}
 			break;
 		case 3:
-			printf("\n====== ZODIACO CHINÊS ======\n");
+			printf("\n====== ZODIACO CHINES ======\n");
 			printf("Digite um ano entre 1996 a 2007: ");
 			scanf("%d", &ano);
 
 			if ((ano == 1996))
 			{
-				printf("Seu zodiaco chines é Rato");
+				printf("Seu zodiaco chines eh Rato");
 			}
 			else if ((ano == 1997))
 			{
@@ -206,7 +206,7 @@ int main()
 			printf("Muito Obrigado, Volte sempre!\n");
 			printf("E que o Cosmos esteja com voce!");
 			break;
-		default: // caso opção seja inválida
+		default: // caso opcao seja invalida
 			printf("Opcao invalida! Tente denovo.\n");
 		}
 	} while (opcao != 4); // continua exibindo o menu ate sair
