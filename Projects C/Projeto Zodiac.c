@@ -13,26 +13,26 @@ int main()
 	{
 
 		printf("\n====== MENU ======");
-		printf("\n====== SIGNOS ======\n");
-		printf("[1] Zodï¿½aco\n");
+		printf("\n====== ESCOLHA O CALENDARIO ZODIACO ======\n");
+		printf("[1] Zodiaco\n");
 		printf("[2] Egipicio\n");
-		printf("[3] Chinï¿½s\n");
+		printf("[3] Chines\n");
 		printf("[4] Sair\n");
 		printf("Escolha uma opcao: ");
 		scanf("%d", &opcao);
 
-		// avalia a op??o escolhida pelo usu?rio
+		// avalia a opço escolhida pelo usuário
 		switch (opcao)
 		{
 		case 1:
-			printf("\n====== SIGNOS ZODï¿½ACOS ======\n");
+			printf("\n====== ZODIACO TRADICIONAL ======\n");
 			printf("Digite o dia em que nasceu: ");
 			scanf("%d", &dia);
-			printf("Agora em que mes nasceu (EM Nï¿½MEROS!): ");
+			printf("Agora em que mes nasceu (EM NUMEROS!): ");
 			scanf("%d", &mes);
 			if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19))
 			{
-				printf("Seu signo e ï¿½ries.\n");
+				printf("Seu signo e Aries.\n");
 			}
 			else if ((mes == 4 && dia >= 20) || (mes == 5 && dia <= 20))
 			{
@@ -40,15 +40,15 @@ int main()
 			}
 			else if ((mes == 5 && dia >= 21) || (mes == 6 && dia <= 20))
 			{
-				printf("Seu signo e Gï¿½meos.\n");
+				printf("Seu signo e Gemeos.\n");
 			}
 			else if ((mes == 6 && dia >= 21) || (mes == 7 && dia <= 22))
 			{
-				printf("Seu signo e Cï¿½ncer.\n");
+				printf("Seu signo e Cancer.\n");
 			}
 			else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 22))
 			{
-				printf("Seu signo e Leï¿½o.\n");
+				printf("Seu signo e Leao.\n");
 			}
 			else if ((mes == 8 && dia >= 23) || (mes == 9 && dia <= 22))
 			{
@@ -60,19 +60,19 @@ int main()
 			}
 			else if ((mes == 10 && dia >= 23) || (mes == 11 && dia <= 21))
 			{
-				printf("Seu signo e Escorpiï¿½o.\n");
+				printf("Seu signo e Escorpiao.\n");
 			}
 			else if ((mes == 11 && dia >= 22) || (mes == 12 && dia <= 21))
 			{
-				printf("Seu signo e Sagitï¿½rio.\n");
+				printf("Seu signo e Sagitario.\n");
 			}
 			else if ((mes == 12 && dia >= 22) || (mes == 1 && dia <= 19))
 			{
-				printf("Seu signo e Capricï¿½rnio.\n");
+				printf("Seu signo e Capricornio.\n");
 			}
 			else if ((mes == 1 && dia >= 20) || (mes == 2 && dia <= 18))
 			{
-				printf("Seu signo e Aquï¿½rio.\n");
+				printf("Seu signo e Aquario.\n");
 			}
 			else if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20))
 			{
@@ -80,15 +80,15 @@ int main()
 			}
 			else
 			{
-				printf("Data de nascimento invï¿½lida.\n");
+				printf("Data de nascimento inv?lida.\n");
 			}
 			break;
 
 		case 2:
-			printf("\n====== SIGNOS EGIPICIOS ======\n");
+			printf("\n====== ZODIACO EGIPICIO ======\n");
 			printf("Digite o dia em que nasceu: ");
 			scanf("%d", &dia);
-			printf("Agora em que mes nasceu (EM Nï¿½MEROS!): ");
+			printf("Agora em que mes nasceu (EM NUMEROS!): ");
 			scanf("%d", &mes);
 			if ((mes == 3 && dia >= 16) || (mes == 4 && dia <= 15))
 			{
@@ -104,11 +104,11 @@ int main()
 			}
 			else if ((mes == 6 && dia >= 16) || (mes == 7 && dia <= 15))
 			{
-				printf("Seu signo e ï¿½sis.\n");
+				printf("Seu signo e Isis.\n");
 			}
 			else if ((mes == 7 && dia >= 16) || (mes == 8 && dia <= 15))
 			{
-				printf("Seu signo e Rï¿½\n");
+				printf("Seu signo e Ra\n");
 			}
 			else if ((mes == 8 && dia >= 16) || (mes == 9 && dia <= 15))
 			{
@@ -120,15 +120,15 @@ int main()
 			}
 			else if ((mes == 10 && dia >= 16) || (mes == 11 && dia <= 15))
 			{
-				printf("Seu signo e Osï¿½ris.\n");
+				printf("Seu signo e Osiris.\n");
 			}
 			else if ((mes == 11 && dia >= 16) || (mes == 12 && dia <= 15))
 			{
-				printf("Seu signo e Hï¿½tor.\n");
+				printf("Seu signo e Hator.\n");
 			}
 			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15))
 			{
-				printf("Seu signo e Anï¿½bis.\n");
+				printf("Seu signo e An?bis.\n");
 			}
 			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15))
 			{
@@ -140,75 +140,75 @@ int main()
 			}
 			else
 			{
-				printf("Data de nascimento invï¿½lida.\n");
+				printf("Data de nascimento inv?lida.\n");
 			}
 			break;
 		case 3:
-			printf("\n====== ZODIACO CHINÃŠS ALEATÃ“RIO ======\n");
-			printf("Digite um ano entre 1990 a 2001: ");
+			printf("\n====== ZODIACO CHINÊS ======\n");
+			printf("Digite um ano entre 1996 a 2007: ");
 			scanf("%d", &ano);
 
-			if ((ano == 1990))
+			if ((ano == 1996))
 			{
-				printf("Seu zodiaco chines ï¿½ apapapapya");
-			}
-			else if ((ano == 1991))
-			{
-				printf("Seu zodiaco chines ï¿½ bï¿½falo");
-			}
-			else if ((ano == 1992))
-			{
-				printf("Seu zodiaco chines ï¿½ tigre");
-			}
-			else if ((ano == 1993))
-			{
-				printf("Seu zodiaco chines ï¿½ coelho");
-			}
-			else if ((ano == 1994))
-			{
-				printf("Seu zodiaco chines ï¿½ dragï¿½o");
-			}
-			else if ((ano == 1995))
-			{
-				printf("Seu zodiaco chines ï¿½ serpente");
-			}
-			else if ((ano == 1996))
-			{
-				printf("Seu zodiaco chines ï¿½ cavalo");
+				printf("Seu zodiaco chines é Rato");
 			}
 			else if ((ano == 1997))
 			{
-				printf("Seu zodiaco chines ï¿½ cabra");
+				printf("Seu zodiaco chines eh bufalo");
 			}
 			else if ((ano == 1998))
 			{
-				printf("Seu zodiaco chines ï¿½ macaco");
+				printf("Seu zodiaco chines eh tigre");
 			}
 			else if ((ano == 1999))
 			{
-				printf("Seu zodiaco chines ï¿½ galo");
+				printf("Seu zodiaco chines eh coelho");
 			}
 			else if ((ano == 2000))
 			{
-				printf("Seu zodiaco chines ï¿½ cachorro");
+				printf("Seu zodiaco chines eh dragao");
 			}
 			else if ((ano == 2001))
 			{
-				printf("Seu zodiaco chines ï¿½ porco");
+				printf("Seu zodiaco chines eh serpente");
+			}
+			else if ((ano == 2002))
+			{
+				printf("Seu zodiaco chines eh cavalo");
+			}
+			else if ((ano == 2003))
+			{
+				printf("Seu zodiaco chines eh cabra");
+			}
+			else if ((ano == 2004))
+			{
+				printf("Seu zodiaco chines eh macaco");
+			}
+			else if ((ano == 2005))
+			{
+				printf("Seu zodiaco chines eh galo");
+			}
+			else if ((ano == 2006))
+			{
+				printf("Seu zodiaco chines eh cachorro");
+			}
+			else if ((ano == 2007))
+			{
+				printf("Seu zodiaco chines eh porco");
 			}
 			else
 			{
-				printf("Ano invï¿½lido.\n");
+				printf("Ano invalido.\n");
 			}
 			break;
 
 		case 4:
 			printf("Saindo...\n");
 			break;
-		default: //
+		default: // caso opção seja inválida
 			printf("Opcao invalida! Tente denovo.\n");
 		}
-	} while (opcao != 4); // continua exibindo o menu at? sair
+	} while (opcao != 4); // continua exibindo o menu ate sair
 
 	return 0;
 }
