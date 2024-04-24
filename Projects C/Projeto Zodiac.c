@@ -203,7 +203,8 @@ int main()
 			break;
 
 		case 4:
-			printf("Saindo...\n");
+			printf("Muito Obrigado, Volte sempre!\n");
+			printf("E que o Cosmos esteja com voce!");
 			break;
 		default: // caso opção seja inválida
 			printf("Opcao invalida! Tente denovo.\n");
