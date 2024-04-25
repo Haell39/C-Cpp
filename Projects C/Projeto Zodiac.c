@@ -9,6 +9,15 @@ int main()
 	int opcao, dia, mes, ano; // declaracao das variaveis
 
 	// Menu
+	/*
+	 * O comando "do" serve para criar uma estrutura de repeticao
+	 * que executa um bloco de codigo enquanto uma determinada condicao for verdadeira
+	 * Neste caso, o programa vai exibir o menu enquanto a opcao escolhida pelo
+	 * usuario nao for a opcao 4 (sair)
+	 * Isso e importante porque a opcao 1 e 2 usam a funcao scanf() nao limpa o buffer(registo de memoria alocado para armazenar dados temporariamente antes de serem enviados ou processados.)
+	 * e vamos precisar usar o while para garantir que o buffer esteja limpo antes de
+	 * pedir novamente as opcoes
+	 */
 	do
 	{
 		/*
@@ -30,6 +39,11 @@ int main()
 		scanf("%d", &opcao); // le a opcao escolhida
 
 		// avalia a opcao escolhida pelo usuario
+		// o switch é usado para escolher qual bloco de codigo executar
+		// de acordo com a opcao escolhida pelo usuario
+		// a variavel "opcao" recebe um numero que representa a opcao escolhida
+		// e o switch verifica qual caso correspondente a opcao escolhida e executa
+		// o codigo dentro desse caso
 		switch (opcao)
 		{
 		case 1: // caso o usuario escolha a opcao 1
@@ -41,10 +55,30 @@ int main()
 				e exibe o zodiac correspondente
 			*/
 			printf("\n====== ZODIACO TRADICIONAL ======\n");
-			printf("Digite o dia em que nasceu: "); // pede o dia
-			scanf("%d", &dia); // le o dia
+			printf("Digite o dia em que nasceu: ");			   // pede o dia
+			scanf("%d", &dia);								   // le o dia
 			printf("Agora em que mes nasceu (EM NUMEROS!): "); // pede o mes
-			scanf("%d", &mes); // le o mes
+			scanf("%d", &mes);								   // le o mes
+
+			//* Explicação do IF Else:
+
+			/*
+				O if/else é uma estrutura de controle que serve para escolher
+				qual bloco de codigo executar de acordo com uma condicao
+
+				O if eh usado para verificar se uma condicao eh verdadeira ou nao
+				e se for, executa o bloco de codigo dentro do if
+				O else eh usado para executar um bloco de codigo caso a condicao
+				do if seja FALSA
+
+				O else é OPCIONAL e pode ser usado junto com o if para executar
+				dois blocos de codigo diferentes de acordo com a condicao
+				Essa estrutura eh usada para escolher qual bloco de codigo executar
+				de acordo com a condicao verdadeira ou falsa
+
+				No nosso programa, usamos if e else para escolher qual zodiaco exibir
+				de acordo com a data de nascimento do usuario
+			*/
 
 			/*
 				Calcula o zodiaco tradicional de acordo com o mes e o dia
@@ -112,58 +146,58 @@ int main()
 			printf("\n====== ZODIACO EGIPICIO ======\n"); // imprime mensagem de opcao escolhida
 
 			printf("Digite o dia em que nasceu: "); // pede dia de nascimento
-			scanf("%d", &dia); // lê dia de nascimento
+			scanf("%d", &dia);						// lê dia de nascimento
 
 			printf("Agora em que mes nasceu (EM NUMEROS!): "); // pede mes de nascimento
-			scanf("%d", &mes); // lê mes de nascimento
+			scanf("%d", &mes);								   // lê mes de nascimento
 
 			// verifica o signo do usuario de acordo com o mes e o dia
 
-			if ((mes == 3 && dia >= 16) || (mes == 4 && dia <= 15)) 
+			if ((mes == 3 && dia >= 16) || (mes == 4 && dia <= 15))
 			{
 				printf("Seu signo e Sekhmet.\n");
 			}
-			else if ((mes == 4 && dia >= 16) || (mes == 5 && dia <= 15)) 
+			else if ((mes == 4 && dia >= 16) || (mes == 5 && dia <= 15))
 			{
 				printf("Seu signo e Ptah.\n");
 			}
-			else if ((mes == 5 && dia >= 16) || (mes == 6 && dia <= 15)) 
+			else if ((mes == 5 && dia >= 16) || (mes == 6 && dia <= 15))
 			{
 				printf("Seu signo e Toth.\n");
 			}
-			else if ((mes == 6 && dia >= 16) || (mes == 7 && dia <= 15)) 
+			else if ((mes == 6 && dia >= 16) || (mes == 7 && dia <= 15))
 			{
 				printf("Seu signo e Isis.\n");
 			}
-			else if ((mes == 7 && dia >= 16) || (mes == 8 && dia <= 15)) 
+			else if ((mes == 7 && dia >= 16) || (mes == 8 && dia <= 15))
 			{
 				printf("Seu signo e Ra\n"); // \n para pular linha
 			}
-			else if ((mes == 8 && dia >= 16) || (mes == 9 && dia <= 15)) 
+			else if ((mes == 8 && dia >= 16) || (mes == 9 && dia <= 15))
 			{
 				printf("Seu signo e Neit.\n");
 			}
-			else if ((mes == 9 && dia >= 16) || (mes == 10 && dia <= 15)) 
+			else if ((mes == 9 && dia >= 16) || (mes == 10 && dia <= 15))
 			{
 				printf("Seu signo e Maat.\n");
 			}
-			else if ((mes == 10 && dia >= 16) || (mes == 11 && dia <= 15)) 
+			else if ((mes == 10 && dia >= 16) || (mes == 11 && dia <= 15))
 			{
 				printf("Seu signo e Osiris.\n");
 			}
-			else if ((mes == 11 && dia >= 16) || (mes == 12 && dia <= 15)) 
+			else if ((mes == 11 && dia >= 16) || (mes == 12 && dia <= 15))
 			{
 				printf("Seu signo e Hator.\n");
 			}
-			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15)) 
+			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15))
 			{
 				printf("Seu signo e An?bis.\n");
 			}
-			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15)) 
+			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15))
 			{
 				printf("Seu signo e Bastet.\n");
 			}
-			else if ((mes == 2 && dia >= 16) || (mes == 3 && dia <= 15)) 
+			else if ((mes == 2 && dia >= 16) || (mes == 3 && dia <= 15))
 			{
 				printf("Seu signo e Tauret.\n");
 			}
@@ -250,10 +284,17 @@ int main()
 			printf("Muito Obrigado, Volte sempre!\n");
 			printf("E que o Cosmos esteja com voce!");
 			break; // fim do caso 4 do switch
-		default: // caso opcao escolhida seja invalida
+		default:   // caso opcao escolhida seja invalida
 			printf("Opcao invalida! Tente denovo.\n");
 		}
 	} while (opcao != 4); // continua exibindo o menu ate sair
+						  // Exibe o menu enquanto a opcao escolhida pelo usuario nao for a opcao 4 (sair)
+						  // Essa estrutura de repeticao serve para que o programa continue rodando enquanto o usuario nao escolher a opcao 4
+						  // Isso e importante porque a opcao 1 e 2 usam a funcao scanf() que nao limpa o buffer(registo de memoria alocado para armazenar dados temporariamente antes de serem enviados ou processados) e vamos precisar usar o while
+						  // para garantir que o buffer esteja limpo antes de pedir novamente as opcoes
 
 	return 0; // encerra o programa
 }
+
+//! OBS:
+//? buffer" se refere a uma região de memória alocada para armazenar dados temporariamente antes de serem enviados ou processados. É comumente usado em operações de E/S (entrada/saída) para armazenar dados antes de serem gravados em um arquivo ou lidos de um arquivo.
