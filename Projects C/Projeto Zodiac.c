@@ -4,14 +4,22 @@
 int main()
 {
 
-	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese"); // permite acessar caracteres especiais
 
-	int opcao, dia, mes, ano;
+	int opcao, dia, mes, ano; // declaracao das variaveis
 
 	// Menu
 	do
 	{
+		/*
+			Menu com as opcoes:
+				- Tradicional
+				- Egipicio
+				- Chines
+				- Sair
 
+			A variavel "opcao" recebe o numero da opcao escolhida pelo usuario
+		*/
 		printf("\n================== MENU ===============");
 		printf("\n===== ESCOLHA O CALENDARIO ZODIACO =====\n");
 		printf("[1] Tradicional\n");
@@ -19,17 +27,33 @@ int main()
 		printf("[3] Chines\n");
 		printf("[4] Sair\n");
 		printf("Escolha uma opcao: ");
-		scanf("%d", &opcao);
+		scanf("%d", &opcao); // le a opcao escolhida
 
 		// avalia a opcao escolhida pelo usuario
 		switch (opcao)
 		{
-		case 1:
+		case 1: // caso o usuario escolha a opcao 1
+
+			/*
+				Opcao 1: Tradicional
+
+				Pede ao usuario para digitar a data de nascimento
+				e exibe o zodiac correspondente
+			*/
 			printf("\n====== ZODIACO TRADICIONAL ======\n");
-			printf("Digite o dia em que nasceu: ");
-			scanf("%d", &dia);
-			printf("Agora em que mes nasceu (EM NUMEROS!): ");
-			scanf("%d", &mes);
+			printf("Digite o dia em que nasceu: "); // pede o dia
+			scanf("%d", &dia); // le o dia
+			printf("Agora em que mes nasceu (EM NUMEROS!): "); // pede o mes
+			scanf("%d", &mes); // le o mes
+
+			/*
+				Calcula o zodiaco tradicional de acordo com o mes e o dia
+				Cada if/else verifica a data e compara com o mes e dia
+				e exibe o zodiac correspondente
+
+				Ou seja, se o mes for Maio e o dia for maior ou igual a 21
+				e menor ou igual a 31, exibe "Seu signo e Aries"
+			*/
 			if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19))
 			{
 				printf("Seu signo e Aries.\n");
@@ -82,72 +106,79 @@ int main()
 			{
 				printf("Data de nascimento inv?lida.\n");
 			}
-			break;
+			break; // fim do caso 1 do switch
 
 		case 2:
-			printf("\n====== ZODIACO EGIPICIO ======\n");
-			printf("Digite o dia em que nasceu: ");
-			scanf("%d", &dia);
-			printf("Agora em que mes nasceu (EM NUMEROS!): ");
-			scanf("%d", &mes);
-			if ((mes == 3 && dia >= 16) || (mes == 4 && dia <= 15))
+			printf("\n====== ZODIACO EGIPICIO ======\n"); // imprime mensagem de opcao escolhida
+
+			printf("Digite o dia em que nasceu: "); // pede dia de nascimento
+			scanf("%d", &dia); // lê dia de nascimento
+
+			printf("Agora em que mes nasceu (EM NUMEROS!): "); // pede mes de nascimento
+			scanf("%d", &mes); // lê mes de nascimento
+
+			// verifica o signo do usuario de acordo com o mes e o dia
+
+			if ((mes == 3 && dia >= 16) || (mes == 4 && dia <= 15)) 
 			{
 				printf("Seu signo e Sekhmet.\n");
 			}
-			else if ((mes == 4 && dia >= 16) || (mes == 5 && dia <= 15))
+			else if ((mes == 4 && dia >= 16) || (mes == 5 && dia <= 15)) 
 			{
 				printf("Seu signo e Ptah.\n");
 			}
-			else if ((mes == 5 && dia >= 16) || (mes == 6 && dia <= 15))
+			else if ((mes == 5 && dia >= 16) || (mes == 6 && dia <= 15)) 
 			{
 				printf("Seu signo e Toth.\n");
 			}
-			else if ((mes == 6 && dia >= 16) || (mes == 7 && dia <= 15))
+			else if ((mes == 6 && dia >= 16) || (mes == 7 && dia <= 15)) 
 			{
 				printf("Seu signo e Isis.\n");
 			}
-			else if ((mes == 7 && dia >= 16) || (mes == 8 && dia <= 15))
+			else if ((mes == 7 && dia >= 16) || (mes == 8 && dia <= 15)) 
 			{
-				printf("Seu signo e Ra\n");
+				printf("Seu signo e Ra\n"); // \n para pular linha
 			}
-			else if ((mes == 8 && dia >= 16) || (mes == 9 && dia <= 15))
+			else if ((mes == 8 && dia >= 16) || (mes == 9 && dia <= 15)) 
 			{
 				printf("Seu signo e Neit.\n");
 			}
-			else if ((mes == 9 && dia >= 16) || (mes == 10 && dia <= 15))
+			else if ((mes == 9 && dia >= 16) || (mes == 10 && dia <= 15)) 
 			{
 				printf("Seu signo e Maat.\n");
 			}
-			else if ((mes == 10 && dia >= 16) || (mes == 11 && dia <= 15))
+			else if ((mes == 10 && dia >= 16) || (mes == 11 && dia <= 15)) 
 			{
 				printf("Seu signo e Osiris.\n");
 			}
-			else if ((mes == 11 && dia >= 16) || (mes == 12 && dia <= 15))
+			else if ((mes == 11 && dia >= 16) || (mes == 12 && dia <= 15)) 
 			{
 				printf("Seu signo e Hator.\n");
 			}
-			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15))
+			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15)) 
 			{
 				printf("Seu signo e An?bis.\n");
 			}
-			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15))
+			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15)) 
 			{
 				printf("Seu signo e Bastet.\n");
 			}
-			else if ((mes == 2 && dia >= 16) || (mes == 3 && dia <= 15))
+			else if ((mes == 2 && dia >= 16) || (mes == 3 && dia <= 15)) 
 			{
 				printf("Seu signo e Tauret.\n");
 			}
-			else
+			else // data de nascimento invalida caso o usuario digite um dia ou mes invalido
 			{
 				printf("Data de nascimento inv?lida.\n");
 			}
-			break;
+			break; // fim do caso 2 do switch
+
 		case 3:
 			printf("\n====== ZODIACO CHINES ======\n");
 			printf("Digite o ano do seu nascimento: ");
 			scanf("%d", &ano);
-
+			// verifica o signo do usuario de acordo apenas com o ano nascido
+			// usa operador logico para ser possivel escolher varios anos
 			if ((ano == 1936 || ano == 1948 || ano == 1960 || ano == 1972 || ano == 1984 || ano == 1996 || ano == 2008 || ano == 2020))
 			//* anos do rato: 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020
 			{
@@ -212,16 +243,17 @@ int main()
 			{
 				printf("Ano invalido.\n");
 			}
-			break;
+			break; // fim do caso 3 do switch
 
 		case 4:
+			// Mensagem final ao usuario
 			printf("Muito Obrigado, Volte sempre!\n");
 			printf("E que o Cosmos esteja com voce!");
-			break;
-		default: // caso opcao seja invalida
+			break; // fim do caso 4 do switch
+		default: // caso opcao escolhida seja invalida
 			printf("Opcao invalida! Tente denovo.\n");
 		}
 	} while (opcao != 4); // continua exibindo o menu ate sair
 
-	return 0;
+	return 0; // encerra o programa
 }
