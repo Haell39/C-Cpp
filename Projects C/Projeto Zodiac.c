@@ -191,7 +191,7 @@ int main()
 			}
 			else if ((mes == 12 && dia >= 16) || (mes == 1 && dia <= 15))
 			{
-				printf("Seu signo e An?bis.\n");
+				printf("Seu signo e Anubis.\n");
 			}
 			else if ((mes == 1 && dia >= 16) || (mes == 2 && dia <= 15))
 			{
@@ -203,7 +203,7 @@ int main()
 			}
 			else // data de nascimento invalida caso o usuario digite um dia ou mes invalido
 			{
-				printf("Data de nascimento inv?lida.\n");
+				printf("Data de nascimento invalida.\n");
 			}
 			break; // fim do caso 2 do switch
 
