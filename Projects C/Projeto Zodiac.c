@@ -10,9 +10,8 @@ int main()
 
 	// Menu
 	/*
-	 * O comando "do" serve para criar uma estrutura de repeticao
-	 * que executa um bloco de codigo enquanto uma determinada condicao for verdadeira
-	 * Neste caso, o programa vai exibir o menu enquanto a opcao escolhida pelo
+	 * O comando "do" serve para executar o codigo pelo menos uma vez, e depois continuar executando enquanto a condição do while for verdadeira, que no nosso caso é até o usuario digitar 4 
+	 * Ou seja, o programa vai exibir o menu enquanto a opcao escolhida pelo
 	 * usuario nao for a opcao 4 (sair)
 	 * Isso e importante porque a opcao 1 e 2 usam a funcao scanf() nao limpa o buffer(registo de memoria alocado para armazenar dados temporariamente antes de serem enviados ou processados.)
 	 * e vamos precisar usar o while para garantir que o buffer esteja limpo antes de
