@@ -137,7 +137,7 @@ int main()
 			}
 			else
 			{
-				printf("Data de nascimento inv?lida.\n");
+				printf("Data de nascimento invalida.\n");
 			}
 			break; // fim do caso 1 do switch
 
