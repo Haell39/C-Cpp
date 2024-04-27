@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <locale.h>
 
+// ATENÇÃO: O codigo apresenta grande quantidade de if else propositalmente
+
+// É possivel reduzir as linhas de codigo deste programa utilizando uma função junto a um array circular
+
 int main()
 {
 
