@@ -20,8 +20,6 @@ int main() // função principal do programa
     // o que significa que 'b' deve ser multiplicado por -1
     // para garantir que o valor calculado com a função sqrt() 
     // seja sempre positivo.
-    b = b * -1; 
-    b = b * -1; // multiplica 'b' por -1 para calcular a equação do segundo grau e para que o b seja sempre positivo
 
     x1 = (b - sqrt(b * b - 4 * a * c)) / (2 * a); // calcula o valor de 'x1' usando a fórmula da equação do segundo grau
 
