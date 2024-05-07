@@ -15,8 +15,8 @@ int main()
     do
     {
         printf("digite um valor: ");
-    } while ();
-    
+        scanf("%d", &count2);
+    } while (count2 > 0);
 
     return 0;
 }

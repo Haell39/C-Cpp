@@ -1,0 +1,1 @@
+static.void main("java.lang.System.out.println("Hello, World!");")
