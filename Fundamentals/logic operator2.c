@@ -48,20 +48,20 @@ int main()
     scanf("%f %f", &nota1, &nota2);
 
     // Solicitar a frequência do aluno
-    printf("Digite a frequência do aluno: ");
+    printf("Digite a frequencia do aluno: ");
     scanf("%d", &frequencia);
 
-    // Calcular a média
+    // Calcular a media
     media = (nota1 + nota2) / 2;
 
     // Verificar se o aluno está aprovado, em recuperação ou reprovado
     if (media >= 7 && frequencia >= 75)
     {
-        printf("APROVADO com média: %.2f\n", media);
+        printf("APROVADO com media: %.2f\n", media);
     }
     else if (media >= 4 && frequencia >= 50)
     {
-        printf("RECUPERAÇÃO com média: %.2f\n", media);
+        printf("RECUPERACAO com media: %.2f\n", media);
     }
     else
     {
