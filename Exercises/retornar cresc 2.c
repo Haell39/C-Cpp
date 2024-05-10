@@ -4,12 +4,12 @@ int main()
 {
     int a, b, c;
 
-    printf("Digite três números inteiros: ");
+    printf("Digite tres nemeros inteiros: ");
     scanf("%d %d %d", &a, &b, &c);
 
     if (a == b || a == c || b == c)
     {
-        printf("Os números não são distintos.\n");
+        printf("Os numeros nao sao distintos.\n");
     }
     else
     {
