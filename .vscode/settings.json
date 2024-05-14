@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "stdio.h": "c",
-    "arraycir.C": "cpp"
+    "arraycir.C": "cpp",
+    "RAVI43.C": "cpp"
   },
   "cmake.configureOnOpen": true
 }
