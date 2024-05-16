@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 // Função para resolver equações do primeiro grau
-void resolverEquacao(float a, float b)
+//* podia usar: void resolverEquacao(float a, float b) que tbm funcionaria
+float resolverEquacao(float a, float b)
 {
     // Verifica se 'a' é igual a zero
     if (a == 0)
