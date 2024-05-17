@@ -12,15 +12,15 @@ int mult(int x, int y)
 {
     return x * y;
 }
-int div(int x, int y)
+int rest(int x, int y)
 {
-    return x / y;
+    return x % y;
 }
 
 int main()
 {
 
-    int a, b, result;
+    int a, b;
 
     printf("Type two integer numbers: ");
     scanf("%d %d", &a, &b);
@@ -29,7 +29,7 @@ int main()
     printf("adicao(%d, %d) = %d\n", a, b, add(a, b));
     printf("subtracao(%d, %d) = %d\n", a, b, sub(a, b));
     printf("multiplicacao(%d, %d) = %d\n", a, b, mult(a, b));
-    printf("divisao(%d, %d) = %d\n", a, b, div(a, b));
+    printf("Resto(%d, %d) = %d\n", a, b, rest(a, b));
     
 
 
