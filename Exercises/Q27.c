@@ -10,5 +10,7 @@ int main()
         printf("%d^2 = %d\n", i, i*i); //* tbm é possivel printar assim: printf("%d ", i*i);
     }
 
+    
+
     return 0;
 }
