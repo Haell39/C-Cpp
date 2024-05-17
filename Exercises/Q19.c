@@ -20,8 +20,22 @@ int main()
     {
         printf("%d eh o maior", c);
     }
-    else if(a = b = c){
-        printf("numeros iguais");
+    else if (a == b && b == c)
+    {
+        printf("Numeros iguais");
+    }
+    else if (b == c)
+    {
+        printf("O segundo eh igual o ultimo");
+    }
+    else if (a == b)
+    {
+        printf("O primeiro eh igual ao segundo");
+    }
+
+    else if (a == c)
+    {
+        printf("O primeiro eh igual ao terceiro");
     }
 
     else{
