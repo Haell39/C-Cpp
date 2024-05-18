@@ -16,12 +16,24 @@ int main()
 
     printf("A soma dos elementos do vetor eh: %d\n", soma);
     printf("A media dos elementos do vetor eh: %.2f\n", media);
-
     printf("A media eh 5, e os numeros maiores que a media sao: \n");
 
     for (int i = 0; i < 10; i++)
     {
         if (vetor[i] > 5)
+        {
+            printf("%d\n", vetor[i]);
+        }
+    }
+
+    printf("Agora a multiplicacao dos elementos em posicoesimpares por 5: \n");
+    for (int i = 0; i < 10; i++)
+    {
+        if (i % 2 != 0)
+        {
+            printf("%d\n", vetor[i] * 5);
+        }
+        else
         {
             printf("%d\n", vetor[i]);
         }
