@@ -15,5 +15,7 @@ int main()
     }
     printf("A quantidade de pessoas maiores de idade eh: %d\n", count);
 
+
+
     return 0;
 }
