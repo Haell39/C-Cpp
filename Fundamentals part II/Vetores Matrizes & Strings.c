@@ -59,7 +59,68 @@ int main()
     strcpy(destino, origem); // Copia origem para destino
     printf("Destino: %s\n", destino);
 
-    
+    //? Matrizes (Arrays Multidimensionais)
+
+    //* Uma matriz em C é um vetor de vetores. Vamos ver como declarar, inicializar e acessar elementos de uma matriz.
+
+    // Declaração e Inicialização
+
+    int matriz[2][3]; // 2 linhas, 3 colunas
+
+    //*Inicializar:
+
+    int matrizA[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6}};
+
+    //* acessar elementos de uma matriz:
+
+    printf("Elemento na linha 1, coluna 2: %d\n", matrizA[1][2]); // acessa o elemento na linha 1, coluna 2 (6):
+
+    /*
+    Matriz[0][0] = 1
+    Matriz[0][1] = 2
+    Matriz[0][2] = 3
+    Matriz[1][0] = 4
+    Matriz[1][1] = 5
+    Matriz[1][2] = 6 //* perceba que aqui está o elemento 6, na linha indice 1(que é a linha real 2) e na coluna indice 2(que é a coluna real 3)
+
+    */
+
+    //* percorrendo toda matriz:
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("Matriz[%d][%d] = %d\n", i, j, matrizA[i][j]);
+        }
+    }
+
+    //* Organizando a matriz:
+
+    int matrizB[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}};
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("|"); //* barra da matiz
+        for (int j = 0; j < 3; j++)
+        {
+            printf(" %d ", matrizB[i][j]); //* espaçamento entre o %d para os elementos da matriz ficarem espaçados e organizados
+        }
+        printf("|\n"); //* barra da matiz
+    }
+
+    /*
+        ?Resumo:
+
+        (*): Vetores (Arrays): Coleções de elementos do mesmo tipo. Acessados por índices.
+        (*): Strings: Vetores de caracteres terminados por '\0'. Manipulados com funções da biblioteca string.h.
+        (*): Matrizes (Arrays Multidimensionais): Vetores de vetores, acessados por múltiplos índices.
+
+    */
 
     return 0;
 }
