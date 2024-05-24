@@ -12,7 +12,7 @@ int main()
         {
             printf("%d ", i);
             soma += i; //* isso é o mesmo que: soma = soma + i
-                }
+        }
     }
 
     printf("Soma dos numeros par desta sequencia: %d\n", soma);
@@ -21,7 +21,6 @@ int main()
 }
 
 //? Explicando soma = soma + i
-
 
 /*
 
