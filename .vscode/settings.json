@@ -2,7 +2,8 @@
   "files.associations": {
     "stdio.h": "c",
     "arraycir.C": "cpp",
-    "RAVI43.C": "cpp"
+    "RAVI43.C": "cpp",
+    "Dundamentos C++4o.C": "cpp"
   },
   "cmake.configureOnOpen": true
 }
