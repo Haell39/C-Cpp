@@ -19,7 +19,7 @@ int main()
     }
 
     else{
-        printf("invalid number"         );
+        printf("invalid number");
     }
 
 
