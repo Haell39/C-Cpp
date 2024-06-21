@@ -1,21 +1,25 @@
 #include <stdio.h>
 
-int main() {
-    int num1, num2;
+int main()
+{
+    int a, b;
+    printf("Digite 2 numeros naturais: \n");
+    scanf("%d %d", &a, &b);
 
-    printf("Digite dois inteiros: ");
-    scanf("%d %d", &num1, &num2);
+    if(a == b){
+        printf("Os valore sao iguais");
+    }
 
-    if (num1 == num2) {
-        printf("Os numeros sao iguais!\n");
-    } else {
-        if (num1 > num2) {
-            printf("O primeiro numero (%d) e maior que o segundo numero (%d).\n", num1, num2);
-        } else {
-            printf("O segundo numero (%d) e maior que o primeiro numero (%d).\n", num2, num1);
-        }
+    else if(a > b){
+        printf("Os valores sao diferentes, %d eh maior que %d", a, b);
+    }
+    else if(b > a){
+        printf("Os valores sao diferentes, %d eh maior que %d", b, a);
+    }
+
+    else{
+        printf("You have typed shit");
     }
 
     return 0;
 }
-

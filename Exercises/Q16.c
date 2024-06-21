@@ -1,18 +1,23 @@
-
 #include <stdio.h>
+#include <math.h>
+int main()
+{
 
-int main(){
-    int num;
+    int x;
+    printf("Type any integer number: ");
+    scanf("%d", &x);
 
-    printf("Type an Integer number: ");
-    scanf("%d", &num);
+    if(x > 0){
+        printf("You have typed %d", x);
+    }
 
-    if(num > 0){
-        printf("%d\n", num);
-    } else if (num < 0){
-        printf("%d\n", -num);
+    else if(x < 0){
+        printf("The opposite of what you typed is %d", -1 * x);
+    }
+
+    else{
+        printf("Invalid number");
     }
 
     return 0;
 }
-

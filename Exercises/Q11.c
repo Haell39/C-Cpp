@@ -11,16 +11,39 @@ int main()
     printf("Informe o valor pago pelo cliente: ");
     scanf("%f", &vpay);
 
-    if (vbuy > vpay)
+    if (vpay < 0)
     {
-        troco = vbuy - vpay;
-        printf("O troco do cliente será de: %d", troco);
+        printf("Valor invalido");
     }
 
-    else if (vbuy < vpay)
+    else if (vpay > vbuy)
     {
-        printf("Valor insuficiente seu pobre");
+        troco = vpay - vbuy;
+        printf("Seu troco eh %.2f", troco);
     }
+
+    else if (vpay == vbuy)
+    {
+        printf("Seu troco eh 0");
+    }
+
+    else
+    {
+        printf("Valor insuficiente");
+    }
+
+    //* apresentação do troco em cedulas(menores possiveis):
+
+    //* 200, 100, 50, 20, 10, 5, 2;
+
+    
+
+
+
+
+
+
+
     
 
     return 0;
