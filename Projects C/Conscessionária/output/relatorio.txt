@@ -1,0 +1,12 @@
+----- Relatório de Veículos -----
+
+Carro 1:
+  Marca: BMW
+  Modelo: Auros
+  Código: 213
+
+Carro 2:
+  Marca: Jeep
+  Modelo: Compass
+  Código: 457
+
