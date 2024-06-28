@@ -1,14 +1,14 @@
 ----- Relatorio de Veiculos -----
 
 Veiculo 1:
-  Tipo: Moto
-  Marca: yamaha
-  Modelo: bcx
-  Codigo: 3
+  Tipo: Carro
+  Marca: bmw
+  Modelo: asus
+  Codigo: 1
 
 Veiculo 2:
-  Tipo: Carro
-  Marca: bms
-  Modelo: can
-  Codigo: 4
+  Tipo: Moto
+  Marca: yamaha
+  Modelo: bmx
+  Codigo: 2
 
