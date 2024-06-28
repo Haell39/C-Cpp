@@ -1,0 +1,14 @@
+----- Relatório de Veículos -----
+
+Veículo 1:
+  Tipo: Caminhão
+  Marca: Yamato
+  Modelo: KF
+  Código: 44
+
+Veículo 2:
+  Tipo: Moto
+  Marca: honda
+  Modelo: civic
+  Código: 478
+
