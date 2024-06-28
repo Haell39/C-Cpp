@@ -1,14 +1,8 @@
 ----- Relatorio de Veiculos -----
 
 Veiculo 1:
-  Tipo: Carro
-  Marca: bmw
-  Modelo: asus
-  Codigo: 1
-
-Veiculo 2:
   Tipo: Moto
-  Marca: yamaha
-  Modelo: bmx
-  Codigo: 2
+  Marca: ds
+  Modelo: ds
+  Codigo: 1
 

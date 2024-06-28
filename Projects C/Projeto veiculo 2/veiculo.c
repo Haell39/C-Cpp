@@ -80,7 +80,7 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos)
         scanf("%d", &tipo);
         if (tipo < 1 || tipo > 3)
         {
-            printf("Opcao invalida! Escolha 1, 2 ou 3.\n");
+            printf("Opcao invalida! Escolha entre as opcoes disponiveis: 1, 2 ou 3.\n");
         }
     } while (tipo < 1 || tipo > 3);
 
