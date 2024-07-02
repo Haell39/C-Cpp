@@ -61,15 +61,30 @@ int main() {
     return 0;
 }
 
-// Função para registrar um novo veículo
+//? Função para registrar um novo veículo:
+/*
+*Function signature The code defines a function named registrarVeiculo, which takes two parameters:
+*struct Veiculo veiculos[]: an array of struct Veiculo elements. This is an array of structures, where each structure represents a vehicle.
+*int *numVeiculos: a pointer to an integer variable that keeps track of the number of vehicles registered.
+*Function body The function does the following:
+*/
+
 void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
     if (*numVeiculos >= MAX_VEICULOS) {
         printf("Limite maximo de veiculos atingido!\n"); // Verifica se o limite de veículos foi atingido
         return;
-    }
+    } //*The first line of the function checks if the number of vehicles registered (*numVeiculos) has reached the maximum limit (MAX_VEICULOS). If it has, the function prints an error message saying "Limite maximo de veiculos atingido!" (which means "Maximum vehicle limit reached!").
 
     printf("\nRegistro de Veiculo:\n");
 
+    /*
+    *This code is used to get the type of vehicle from the user. Here's what's happening:
+    *The do-while loop is used to repeatedly ask the user for input until a valid option is chosen.
+    *Inside the loop, the program prints a menu with three options: Carro (1), Moto (2), and Caminhao (3).
+    *The user's input is stored in the tipo variable using scanf.
+    *If the input is invalid (less than 1 or greater than 3), the program prints an error message and loops back to ask again.
+    *The loop continues until the user enters a valid option (1, 2, or 3).
+    */
     int tipo;
     do {
         // Leitura do tipo de veículo
@@ -82,8 +97,23 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
 
     // Atribuição do tipo de veículo com base na opção escolhida
     strcpy(veiculos[*numVeiculos].tipo, (tipo == 1) ? "Carro" : (tipo == 2) ? "Moto" : "Caminhao");
+    /*
+    *This line sets the tipo field of the current vehicle structure (veiculos[*numVeiculos].tipo) based on the user's input. Here's how it works:
+    *The ternary operator is used to choose the correct string based on the value of tipo.
+    *If tipo is 1, the string "Carro" is chosen.
+    *If tipo is 2, the string "Moto" is chosen.
+    *If tipo is 3, the string "Caminhao" is chosen.
+    *The strcpy function is used to copy the chosen string into the tipo field of the vehicle structure.
+    */
 
     // Leitura da marca, modelo e código do veículo
+    /*
+        *This code is used to get the vehicle's details (marca, modelo, and código) from the user. Here's what's happening:
+
+    *The program prompts the user to enter the marca (brand), modelo (model), and código (code) of the vehicle.
+    *The user's input is stored in the corresponding fields of the vehicle structure using scanf.
+    *The %29s format specifier is used to limit the input to 29 characters for the marca and modelo fields.
+    */
     printf("Marca: ");
     scanf("%29s", veiculos[*numVeiculos].marca);
     printf("Modelo: ");
@@ -93,17 +123,28 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
 
     (*numVeiculos)++; // Incrementa o contador de veículos registrados
     printf("Veiculo registrado com sucesso!\n");
-}
+} //*This code is used to update the vehicle count and print a
 
-// Função para gerar um relatório de veículos
+
+
+
+//? Função para gerar um relatório de veículos
+//*This is a C function named gerarRelatorio. It takes two parameters:
+//*veiculos: an array of struct Veiculo (which represents a vehicle) numVeiculos: an integer representing the number of vehicles in the array
+
 void gerarRelatorio(struct Veiculo veiculos[], int numVeiculos) {
-    FILE *arquivo;
+    FILE *arquivo; //* The function opens a file named "relatorio.txt" in write mode ("w"). If the file doesn't exist, it will be created. If it does exist, its contents will be overwritten.
+
+
     arquivo = fopen("relatorio.txt", "w"); // Abre um arquivo para escrita
 
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo!\n");
         exit(1); // Verifica se houve erro ao abrir o arquivo
-    }
+    } 
+    /*
+    *If the file cannot be opened (e.g., due to permissions issues or disk errors), the function checks for errors by verifying that the arquivo pointer is not NULL. If it is NULL, an error message is printed, and the program exits with a status code of 1 using the exit function.
+    */
 
     fprintf(arquivo, "----- Relatorio de Veiculos -----\n\n"); // Escreve o cabeçalho do relatório
     for (int i = 0; i < numVeiculos; i++) {
@@ -114,7 +155,18 @@ void gerarRelatorio(struct Veiculo veiculos[], int numVeiculos) {
         fprintf(arquivo, "  Modelo: %s\n", veiculos[i].modelo);
         fprintf(arquivo, "  Codigo: %d\n\n", veiculos[i].codigo);
     }
+    /*
+        *The function loops through the veiculos array using a for loop, iterating numVeiculos times. For each vehicle, it writes the following information to the file:
+        *"Veiculo X:" (where X is the vehicle number, starting from 1)
+        *"Tipo: <vehicle type>"
+        *"Marca: <vehicle brand>"
+        *"Modelo: <vehicle model>"
+        *"Codigo: <vehicle code>"
+        *The fprintf function is used to write these strings to the file, with placeholders for the actual values (e.g., %s for strings, %d for integers).
+    */
 
-    fclose(arquivo); // Fecha o arquivo
+    fclose(arquivo); // Finally, the function closes the file using fclose to release system resources.
+
     printf("Relatorio gerado com sucesso em 'relatorio.txt'!\n");
 }
+//*The function prints a success message to the console, indicating that the report has been generated successfully.
