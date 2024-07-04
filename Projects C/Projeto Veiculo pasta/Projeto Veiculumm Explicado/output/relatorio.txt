@@ -1,0 +1,14 @@
+----- Relatorio de Veiculos -----
+
+Veiculo 1:
+  Tipo: Caminhao
+  Marca: yamaha
+  Modelo: bPM
+  Codigo: 6
+
+Veiculo 2:
+  Tipo: Moto
+  Marca: yaya
+  Modelo: mlk
+  Codigo: 2
+

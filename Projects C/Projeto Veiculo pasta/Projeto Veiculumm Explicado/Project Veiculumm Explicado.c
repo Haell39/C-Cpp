@@ -1,17 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdlib.h> // alocação de memória 
+#include <string.h> // manipulação de strings 
 
 //? Definição de constantes para o número máximo de veículos e o tamanho máximo de marca e modelo
 #define MAX_VEICULOS 10
 #define MAX_MARCA_MODELO 29
 
 //? Definição da estrutura Veiculo
-struct Veiculo {
+
+//*Em C, strings são terminadas com um caractere especial chamado "null terminator" ('\0'). Esse caractere indica o fim da string.
+//* Para armazenar esses 29 caracteres mais o caractere '\0', precisamos de um array com 30 posições (29 + 1).
+struct Veiculo { //Organiza os dados dos veículos
     char tipo[10]; // Tipo de veículo (Carro, Moto, Caminhão)
-    char marca[MAX_MARCA_MODELO + 1]; // Marca do veículo
+    char marca[MAX_MARCA_MODELO + 1]; // Marca do veículo 
     char modelo[MAX_MARCA_MODELO + 1]; // Modelo do veículo
     int codigo; // Código do veículo
+    // Se MAX_MARCA_MODELO fosse 29, e você tivesse uma marca com exatamente 29 caracteres, seria algo assim: //*"MarcaComExatamenteVinteENoveCaractere"
+    // Para armazenar essa string, você precisa de um array com 30 posições: //* {'M', 'a', 'r', 'c', 'a', 'C', 'o', 'm', 'E', 'x', 'a', 't', 'a', 'm', 'e', 'n', 't', 'e', 'V', 'i', 'n', 't', 'e', 'E', 'N', 'o', 'v', 'e', 'C', '\0'}
+    //* Ou seja: +1 nos Arrays marca e modelo: Garante espaço para o caractere de terminação '\0', necessário para strings em C.
 };
 
 //? Declaração das funções para registrar veículos e gerar relatório
