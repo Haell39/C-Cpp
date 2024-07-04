@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Definição de constantes para o número máximo de veículos e o tamanho máximo de marca e modelo
+//? Definição de constantes para o número máximo de veículos e o tamanho máximo de marca e modelo
 #define MAX_VEICULOS 10
 #define MAX_MARCA_MODELO 29
 
-// Definição da estrutura Veiculo
+//? Definição da estrutura Veiculo
 struct Veiculo {
     char tipo[10]; // Tipo de veículo (Carro, Moto, Caminhão)
     char marca[MAX_MARCA_MODELO + 1]; // Marca do veículo
@@ -14,7 +14,7 @@ struct Veiculo {
     int codigo; // Código do veículo
 };
 
-// Declaração das funções para registrar veículos e gerar relatório
+//? Declaração das funções para registrar veículos e gerar relatório
 void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos);
 void gerarRelatorio(struct Veiculo veiculos[], int numVeiculos);
 
@@ -25,20 +25,20 @@ int main() {
 
     printf("----- Boa Tarde -----\n");
     do {
-        // Exibição do menu
+        //* Exibição do menu
         printf("\n--- Menu ---\n");
         printf("[1] Registrar Veiculo\n");
         printf("[2] Gerar Relatorio\n");
         printf("[3] Sair\n");
         printf("Escolha uma opcao: ");
 
-        // Leitura da opção do usuário
+        //? Leitura da opção do usuário
         if (scanf("%d", &opcao) != 1) {
             printf("Erro na leitura da opcao. Saindo do programa...\n");
             return 1;
         }
 
-        // Execução da ação correspondente à opção escolhida
+        //? Execução da ação correspondente à opção escolhida
         switch (opcao) {
             case 1:
                 registrarVeiculo(veiculos, &numVeiculos); // Registrar um novo veículo
@@ -95,7 +95,7 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
         }
     } while (tipo < 1 || tipo > 3);
 
-    // Atribuição do tipo de veículo com base na opção escolhida
+    //? Atribuição do tipo de veículo com base na opção escolhida
     strcpy(veiculos[*numVeiculos].tipo, (tipo == 1) ? "Carro" : (tipo == 2) ? "Moto" : "Caminhao");
     /*
     *This line sets the tipo field of the current vehicle structure (veiculos[*numVeiculos].tipo) based on the user's input. Here's how it works:
@@ -106,7 +106,7 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
     *The strcpy function is used to copy the chosen string into the tipo field of the vehicle structure.
     */
 
-    // Leitura da marca, modelo e código do veículo
+    //? Leitura da marca, modelo e código do veículo
     /*
         *This code is used to get the vehicle's details (marca, modelo, and código) from the user. Here's what's happening:
 
@@ -123,7 +123,7 @@ void registrarVeiculo(struct Veiculo veiculos[], int *numVeiculos) {
 
     (*numVeiculos)++; // Incrementa o contador de veículos registrados
     printf("Veiculo registrado com sucesso!\n");
-} //*This code is used to update the vehicle count and print a
+} // This code is used to update the vehicle count and print a
 
 
 
