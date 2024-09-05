@@ -1,8 +1,0 @@
------ Relatorio de Veiculos -----
-
-Veiculo 1:
-  Tipo: Caminhao
-  Marca: ghh
-  Modelo: gfds
-  Codigo: 2
-
