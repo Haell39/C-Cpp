@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-double equacao1(double a, double b) {
+double equacao1(double a, double b)
+{
     return (-b / a);
 }
 
-int main() {
+int main()
+{
     double a, b, x;
 
     printf("Qual indice a? ");
@@ -13,13 +15,15 @@ int main() {
     printf("Qual indice b? ");
     scanf("%lf", &b);
 
-    if (a == 0) {
+    if (a == 0)
+    {
         printf("Não e uma equação do 1º grau\n");
-    } else {
+    }
+    else
+    {
         x = equacao1(a, b);
-        printf("X = %f\n", x);
+        printf("X = %.2lf\n", x);
     }
 
     return 0;
 }
-
